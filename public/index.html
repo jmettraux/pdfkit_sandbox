@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>PDFkit playground</title>
+  <title>PDFKit playground</title>
   <script src="scripts/pdfkit-full.js"></script>
   <style>
     #frame {
       width: 800px;
       height: 600px;
     }
+    span[onclick] {
+      font-size: 14pt;
+      cursor: pointer;
+      padding: 1em;
+      margin: 1em;
+    }
+    span[onclick]:hover {
+      font-weight: bold;
+    }
   </style>
 </head>
 <body>
   <span onclick="generatePdf();">PDF</span>
+  <br/>
   <iframe id='frame'></iframe>
 
   <script>
